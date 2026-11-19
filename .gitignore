@@ -1,0 +1,45 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Secrets (API keys, passwords) - never commit these
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Trained models and datasets (large files)
+models/*
+!models/.gitkeep
+*.pt
+*.onnx
+*.engine
+datasets/
+runs/
+pipe_runs/
+big_pipe_dataset-*/
+
+# Photos and results created while testing
+uploads/
+output/
+*.csv
+*.xlsx
+!requirements.txt
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
